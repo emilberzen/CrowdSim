@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Flock/Behaviour/Avoidance")]
 
 
-public class AvoidanceBehaviour : FlockBehaviour
+public class AvoidanceBehaviour : FilterFlockBehaviour
 {
     //Finds the middle point between neighbours and tries to move there  
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
@@ -20,15 +20,19 @@ public class AvoidanceBehaviour : FlockBehaviour
         Vector2 AvoidanceMove = Vector2.zero;
 
         //How many inside the avodance radius.
-        int nAvoid = 0; 
-
-        foreach (Transform item in context)
+        int nAvoid = 0;
+        List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
+        foreach (Transform item in fiteredContex)
         {
-             //squared distance between the item and the agent 
-            if(Vector2.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius )
+
+
+            Vector2 closestPoint = item.gameObject.GetComponent<Collider2D>().ClosestPoint(agent.transform.position);
+
+            //squared distance between the item and the agent 
+            if (Vector2.SqrMagnitude(closestPoint - (Vector2)agent.transform.position) < flock.SquareAvoidanceRadius )
             {
                 //gives the offset
-                AvoidanceMove += (Vector2)(agent.transform.position - item.position);
+                AvoidanceMove += (Vector2)((Vector2)agent.transform.position - closestPoint);
 
                 //adds 
                 nAvoid++;

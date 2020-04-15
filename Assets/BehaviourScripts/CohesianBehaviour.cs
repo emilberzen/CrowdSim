@@ -6,7 +6,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behaviour/Cohesion")]
 
-public class CohesianBehaviour : FlockBehaviour
+public class CohesianBehaviour : FilterFlockBehaviour
 {
 
     //Finds the middle point between neighbours and tries to move there  
@@ -19,7 +19,8 @@ public class CohesianBehaviour : FlockBehaviour
 
         //Add all points together and avarage
         Vector2 cohesionMove = Vector2.zero;
-        foreach(Transform item in context)
+        List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
+        foreach (Transform item in fiteredContex)
         {
             cohesionMove += (Vector2)item.position; 
         }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982ae43b67ea0413d938ed29df083d07, type: 3}
   m_Name: Default Flock Behaviour
   m_EditorClassIdentifier: 
+  filter: {fileID: 11400000, guid: a3895dfe9aa84bd42aa70f8574b17c07, type: 2}
   behaviours:
   - {fileID: 11400000, guid: f8c9158ae595a45e29f85071e6a97a4a, type: 2}
   - {fileID: 11400000, guid: b110032ccf60d4ec5b35480a01e28e02, type: 2}

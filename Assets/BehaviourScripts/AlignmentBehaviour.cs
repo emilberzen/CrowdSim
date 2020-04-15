@@ -6,7 +6,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behaviour/Alignment")]
 
-public class AlignmentBehaviour : FlockBehaviour
+public class AlignmentBehaviour : FilterFlockBehaviour
 {
     //Finds the middle point between neighbours and tries to move there  
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
@@ -18,7 +18,8 @@ public class AlignmentBehaviour : FlockBehaviour
 
         //Add all points together and avarage
         Vector2 AlignmentMove = Vector2.zero;
-        foreach (Transform item in context)
+        List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
+        foreach (Transform item in fiteredContex)
         {
             AlignmentMove += (Vector2)item.transform.up;
         }

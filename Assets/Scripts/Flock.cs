@@ -6,7 +6,7 @@ public class Flock : MonoBehaviour
 {
 
     public FlockAgent agentPrefab;
-    List<FlockAgent> agents = new List<FlockAgent>();
+    public static List<FlockAgent> agents = new List<FlockAgent>();
     public FlockBehaviour behaviour;
 
     [Range(10, 1000)]
@@ -55,6 +55,9 @@ public class Flock : MonoBehaviour
 
                 );
             NewAgent.name = "Agent" + i;
+
+            //Now it knows what flock it belong to
+            NewAgent.initialize(this);
             agents.Add(NewAgent);
         }
 
@@ -69,8 +72,7 @@ public class Flock : MonoBehaviour
             //What is inside the agent radius
             List<Transform> contex = GetNearbyObjects(agent);
 
-            //FOR DEMAO ONLY
-           // agent.GetComponentInChildren<SpriteRenderer>().color = Color.Lerp(Color.white, Color.black, contex.Count/6f);
+
 
        
             Vector2 move = behaviour.CalculateMove(agent, contex, this);

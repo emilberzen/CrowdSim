@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Flock/Behaviour/Composite")]
 
 
-public class CompositeBehaviour : FlockBehaviour
+public class CompositeBehaviour : FilterFlockBehaviour
 {
 
     public FlockBehaviour[] behaviours;
