@@ -13,11 +13,13 @@ public class LettersController : MonoBehaviour
     public GameObject[] Letters;
     public GameObject boid1;
     public GameObject boid2;
+    
     void Start()
     {
         Debug.Log(Letters.Length);
 
-
+        GameObject b =  GameObject.Find("a");
+        Debug.Log(b);
     }
 
     // Update is called once per frame
@@ -26,9 +28,16 @@ public class LettersController : MonoBehaviour
         string buttonPressed = Input.inputString;
 
 
-
-        switch (buttonPressed)
+        if (Input.anyKey)
         {
+            Debug.Log(buttonPressed);
+
+        }
+
+
+            switch (buttonPressed)
+        {
+
 
             case "a":
                 Debug.Log("a pressed");
@@ -82,12 +91,151 @@ public class LettersController : MonoBehaviour
                 Letters[6].SetActive(true);
                 break;
 
-            case " ":
-                Debug.Log("Space Pressed");
+            case "h":
+                Debug.Log("h pressed");
                 hideLetters();
+
+                Letters[7].SetActive(true);
                 break;
+
+            case "i":
+                Debug.Log("i pressed");
+                hideLetters();
+
+                Letters[8].SetActive(true);
+                break;
+
+            case "j":
+                Debug.Log("j pressed");
+                hideLetters();
+
+                Letters[9].SetActive(true);
+                break;
+
+            case "k":
+                Debug.Log("k pressed");
+                hideLetters();
+
+                Letters[10].SetActive(true);
+                break;
+
+            case "l":
+                Debug.Log("l pressed");
+                hideLetters();
+
+                Letters[11].SetActive(true);
+                break;
+
+            case "m":
+                Debug.Log("m pressed");
+                hideLetters();
+
+                Letters[12].SetActive(true);
+                break;
+
+            case "n":
+                Debug.Log("n pressed");
+                hideLetters();
+
+                Letters[13].SetActive(true);
+                break;
+
+
+            case "o":
+                Debug.Log("o pressed");
+                hideLetters();
+
+                Letters[14].SetActive(true);
+                break;
+
+
+            case "p":
+                Debug.Log("p pressed");
+                hideLetters();
+
+                Letters[15].SetActive(true);
+                break;
+
+
+            case "q":
+                Debug.Log("q pressed");
+                hideLetters();
+
+                Letters[16].SetActive(true);
+                break;
+
+            case "r":
+                Debug.Log("r pressed");
+                hideLetters();
+
+                Letters[17].SetActive(true);
+                break;
+
+            case "s":
+                Debug.Log("r pressed");
+                hideLetters();
+
+                Letters[18].SetActive(true);
+                break;
+
+            case "t":
+                Debug.Log("r pressed");
+                hideLetters();
+
+                Letters[19].SetActive(true);
+                break;
+
+            case "u":
+                Debug.Log("r pressed");
+                hideLetters();
+
+                Letters[20].SetActive(true);
+                break;
+
+            case "v":
+                Debug.Log("v pressed");
+                hideLetters();
+
+                Letters[21].SetActive(true);
+                break;
+
+            case "w":
+                Debug.Log("w pressed");
+                hideLetters();
+
+                Letters[22].SetActive(true);
+                break;
+                
+            case "x":
+                Debug.Log("x pressed");
+                hideLetters();
+
+                Letters[23].SetActive(true);
+                break;
+
+            case "y":
+                Debug.Log("y pressed");
+                hideLetters();
+
+                Letters[24].SetActive(true);
+                break;
+
+            case "z":
+                Debug.Log("z pressed");
+                hideLetters();
+
+                Letters[25].SetActive(true);
+                break;
+
+            case " ":
+                Debug.Log("Space pressed");
+                hideLetters();
+
+                break;
+
+
         }
-            
+
     }
 
     private void hideLetters()

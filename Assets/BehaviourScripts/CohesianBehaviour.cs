@@ -20,7 +20,7 @@ public class CohesianBehaviour : FilterFlockBehaviour
         //Add all points together and avarage
         Vector2 cohesionMove = Vector2.zero;
         List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
-        foreach (Transform item in fiteredContex)
+        foreach (Transform item in fiteredContex) 
         {
             cohesionMove += (Vector2)item.position; 
         }
