@@ -19,7 +19,7 @@ public class AlignmentBehaviour3D : FilterFlockBehaviour3D
         List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
         foreach (Transform item in fiteredContex)
         {
-            AlignmentMove += (Vector3)item.transform.up;
+            AlignmentMove += item.transform.up;
         }
 
         //returns a normalized value

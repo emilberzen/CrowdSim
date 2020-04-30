@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Alignment Behaviour 3D
   m_EditorClassIdentifier: Assembly-CSharp::AlignmentBehaviour3D
-  filter: {fileID: 11400000, guid: a21d1276cf50ab442954a01e36e9a762, type: 2}
+  filter: {fileID: 0}

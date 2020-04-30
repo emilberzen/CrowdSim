@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filter: {fileID: 11400000, guid: a21d1276cf50ab442954a01e36e9a762, type: 2}
   behaviours:
-  - {fileID: 11400000, guid: 6f07f8ef26249ff4684117c51f12d9a0, type: 2}
-  - {fileID: 11400000, guid: 9c8c664f836f45d43b1c38ff48e0d7bb, type: 2}
+  - {fileID: 11400000, guid: 3b7ba86dce14b15458f7c12861c87e91, type: 2}
+  - {fileID: 11400000, guid: e60503beac87b2347b229a4de78f003e, type: 2}
   - {fileID: 11400000, guid: 94f3f6ebeeeb2bb47bf5c4c521b131bc, type: 2}
   - {fileID: 11400000, guid: 2ed5e1b64e2307b45bb5a4c6c273dd65, type: 2}
   - {fileID: 11400000, guid: 7093cf7f3491efc46867790318e1260e, type: 2}
   weights:
   - 1
-  - 0
-  - 50
+  - 5
   - 1
-  - 10
+  - 0.1
+  - 50

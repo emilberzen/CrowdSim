@@ -37,7 +37,7 @@ public class SteerdCohesianBehaviour3D : FilterFlockBehaviour3D
         //create offset from agent position
         cohesionMove -= agent.transform.position;
 
-        cohesionMove = Vector3.SmoothDamp(agent.transform.forward, cohesionMove, ref currentVelocity , agentSmoothTime);
+        cohesionMove = Vector3.SmoothDamp(agent.transform.up, cohesionMove, ref currentVelocity , agentSmoothTime);
 
         return cohesionMove;
 

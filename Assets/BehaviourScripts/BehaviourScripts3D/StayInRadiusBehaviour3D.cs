@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,20 +17,20 @@ public class StayInRadiusBehaviour3D : FilterFlockBehaviour3D
         Vector3 centerOffset = center - agent.transform.position;
 
         //tells us where we are, if t i 0 we are at the center if t is 1 we are at the end of the radius. 
-        float t = centerOffset.magnitude / radius;
+        float t = centerOffset.magnitude / (radius*3.14f);
 
         //if we are iside the 0.9 radius let the agent continue their journey 
         if(t < 0.9f)
         {
             return Vector3.zero;
         }
-
         
 
-        return centerOffset*t*t;
+        return centerOffset*t*t/radius;
+        
 
 
-           
+
     }
 
 

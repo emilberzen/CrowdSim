@@ -32,8 +32,9 @@ public class CompositeBehaviour3D : FilterFlockBehaviour3D
             //middle man passing through the different beaviours 
             Vector3 partialMove = behaviours[i].CalculateMove(agent, context, flock) * weights[i];
 
+
             //is some movement being returned? 
-            if(partialMove != Vector3.zero)
+            if (partialMove != Vector3.zero)
             {
 
                 //does this movent exceed the wieight?

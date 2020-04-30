@@ -32,7 +32,7 @@ public class AvoidanceBehaviour : FilterFlockBehaviour
             if (Vector2.SqrMagnitude(closestPoint - (Vector2)agent.transform.position) < flock.SquareAvoidanceRadius )
             {
                 //gives the offset
-                AvoidanceMove += (Vector2)((Vector2)agent.transform.position - closestPoint);
+                AvoidanceMove +=((Vector2)agent.transform.position - closestPoint);
 
                 //adds 
                 nAvoid++;

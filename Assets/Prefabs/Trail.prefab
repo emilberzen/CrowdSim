@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5865023820921957366}
   - component: {fileID: 8136373172465619728}
   - component: {fileID: 3983389226322596896}
-  - component: {fileID: 8967910512877532701}
   m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
@@ -178,22 +177,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d077bb233a3247f4933081d2ba1f1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8967910512877532701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7851709213862783053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227c87ae71673f44588eeed6e8dff12e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 0}
-  behaviour: {fileID: 0}
-  startingCount: 250
-  driveFactor: 10
-  maxSpeed: 5
-  neighborRadius: 1.5
-  avoidanceRadiusMultiplier: 0.5

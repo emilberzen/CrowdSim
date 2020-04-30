@@ -8,32 +8,24 @@ using UnityEngine;
 
 public class CohesianBehaviour : FilterFlockBehaviour
 {
-
-    //Finds the middle point between neighbours and tries to move there  
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
     {
-
-        //If no neighbors return no adjustment 
-        if (context.Count == 0)    
+        //if no neighbors, return no adjustment
+        if (context.Count == 0)
             return Vector2.zero;
 
-        //Add all points together and avarage
+        //add all points together and average
         Vector2 cohesionMove = Vector2.zero;
-        List<Transform> fiteredContex = (filter == null) ? context : filter.Filter(agent, context);
-        foreach (Transform item in fiteredContex) 
+        List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
+        foreach (Transform item in filteredContext)
         {
-            cohesionMove += (Vector2)item.position; 
+            cohesionMove += (Vector2)item.position;
         }
-
         cohesionMove /= context.Count;
-
-
 
         //create offset from agent position
         cohesionMove -= (Vector2)agent.transform.position;
-
         return cohesionMove;
-         
     }
 
 

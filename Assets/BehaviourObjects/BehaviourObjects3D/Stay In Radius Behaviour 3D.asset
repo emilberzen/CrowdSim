@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filter: {fileID: 11400000, guid: a21d1276cf50ab442954a01e36e9a762, type: 2}
   center: {x: 0, y: 0, z: 0}
-  radius: 15
+  radius: 10

@@ -29,7 +29,7 @@ public class AvoidanceBehaviour3D : FilterFlockBehaviour3D
             Vector3 closestPoint = item.gameObject.GetComponent<Collider>().ClosestPoint(agent.transform.position);
 
             //squared distance between the item and the agent 
-            if (Vector3.SqrMagnitude(closestPoint - (Vector3)agent.transform.position) < flock.SquareAvoidanceRadius )
+            if (Vector3.SqrMagnitude(closestPoint - agent.transform.position) < flock.SquareAvoidanceRadius )
             {
                 //gives the offset
                 AvoidanceMove += (agent.transform.position - closestPoint);

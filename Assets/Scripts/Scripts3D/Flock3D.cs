@@ -50,7 +50,7 @@ public class Flock3D : MonoBehaviour
             FlockAgent3D NewAgent = Instantiate(
                 agentPrefab,
                 (Random.insideUnitSphere * startingCount * AgentDenstity),
-                Quaternion.Euler(Vector3.forward * Random.Range(0, 360)),
+                Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)),
                 transform
 
                 );
@@ -77,6 +77,7 @@ public class Flock3D : MonoBehaviour
 
             Vector3 move = behaviour.CalculateMove(agent, contex, this);
             move *= driveFactor;
+            
             if (move.sqrMagnitude > squareMaxSpeed)
             {
                 move = move.normalized * maxSpeed;

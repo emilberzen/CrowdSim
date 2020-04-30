@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class FlockAgent3D : MonoBehaviour
 {
-    Flock3D agentFlock3D;
+    private Flock3D agentFlock3D;
     public Flock3D AgentFlock3D { get { return agentFlock3D; } }
 
     Collider agentCollider;
@@ -29,9 +29,10 @@ public class FlockAgent3D : MonoBehaviour
 
     public void Move(Vector3 velocity)
     {
-
         transform.up = velocity;
-        transform.position += (Vector3)velocity * Time.deltaTime;
+        transform.position += velocity * Time.deltaTime;
     }
+
+
 
 }
