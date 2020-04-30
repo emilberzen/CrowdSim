@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &88129378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -210,7 +210,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88129377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -412,12 +412,12 @@ GameObject:
   - component: {fileID: 127073871}
   - component: {fileID: 127073870}
   m_Layer: 8
-  m_Name: Y
+  m_Name: y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &127073869
 Transform:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127073868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -658,12 +658,12 @@ GameObject:
   - component: {fileID: 156772845}
   - component: {fileID: 156772844}
   m_Layer: 8
-  m_Name: Q
+  m_Name: q
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &156772843
 Transform:
   m_ObjectHideFlags: 0
@@ -685,7 +685,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156772842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -976,12 +976,12 @@ GameObject:
   - component: {fileID: 311946740}
   - component: {fileID: 311946739}
   m_Layer: 8
-  m_Name: O
+  m_Name: o
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &311946738
 Transform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311946737}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1293,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!60 &342213303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1301,7 +1301,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342213302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1515,12 +1515,12 @@ GameObject:
   - component: {fileID: 353025657}
   - component: {fileID: 353025656}
   m_Layer: 8
-  m_Name: S
+  m_Name: s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &353025655
 Transform:
   m_ObjectHideFlags: 0
@@ -1542,7 +1542,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353025654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1808,12 +1808,12 @@ GameObject:
   - component: {fileID: 492007435}
   - component: {fileID: 492007434}
   m_Layer: 8
-  m_Name: P
+  m_Name: p
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &492007433
 Transform:
   m_ObjectHideFlags: 0
@@ -1835,7 +1835,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492007432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2001,7 +2001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &553400167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,10 +2016,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 3983389226322596896, guid: c2930e33b76cd734b89d444aa5a59797,
     type: 3}
-  behaviour: {fileID: 11400000, guid: 1330b9058788cb34b9fa2ee18fcb72c6, type: 2}
+  behaviour: {fileID: 11400000, guid: fbf581b8455c77d4abf53bcc28a20144, type: 2}
   startingCount: 100
-  driveFactor: 71
-  maxSpeed: 2
+  driveFactor: 50
+  maxSpeed: 5
   neighborRadius: 1
   avoidanceRadiusMultiplier: 0.5
 --- !u!4 &553400168
@@ -2048,12 +2048,12 @@ GameObject:
   - component: {fileID: 568825153}
   - component: {fileID: 568825155}
   m_Layer: 8
-  m_Name: D
+  m_Name: d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &568825153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2125,7 +2125,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568825152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2270,12 +2270,12 @@ GameObject:
   - component: {fileID: 594711081}
   - component: {fileID: 594711080}
   m_Layer: 8
-  m_Name: H
+  m_Name: h
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &594711079
 Transform:
   m_ObjectHideFlags: 0
@@ -2297,7 +2297,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594711078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2421,12 +2421,12 @@ GameObject:
   - component: {fileID: 630707781}
   - component: {fileID: 630707780}
   m_Layer: 8
-  m_Name: V
+  m_Name: v
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &630707779
 Transform:
   m_ObjectHideFlags: 0
@@ -2448,7 +2448,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630707778}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2634,12 +2634,12 @@ GameObject:
   - component: {fileID: 714836564}
   - component: {fileID: 714836563}
   m_Layer: 8
-  m_Name: I
+  m_Name: i
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &714836562
 Transform:
   m_ObjectHideFlags: 0
@@ -2661,7 +2661,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714836561}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2761,12 +2761,12 @@ GameObject:
   - component: {fileID: 725695731}
   - component: {fileID: 725695730}
   m_Layer: 8
-  m_Name: X
+  m_Name: x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &725695729
 Transform:
   m_ObjectHideFlags: 0
@@ -2788,7 +2788,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725695728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3052,7 +3052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &735905244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3124,7 +3124,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735905243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3231,6 +3231,57 @@ PolygonCollider2D:
       - {x: 0.42999998, y: 0.81}
       - {x: 0.42, y: 0.79999995}
       - {x: -1.52, y: 0.79999995}
+--- !u!1 &739763861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739763863}
+  - component: {fileID: 739763862}
+  m_Layer: 0
+  m_Name: Flock3D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &739763862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739763861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227c87ae71673f44588eeed6e8dff12e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentPrefab: {fileID: -3690806966639555669, guid: ebf35f9701b03f347b69d028f2613f14,
+    type: 3}
+  behaviour: {fileID: 11400000, guid: 6a6bc3eabc883b94a85caf675c60efea, type: 2}
+  startingCount: 200
+  driveFactor: 60
+  maxSpeed: 7
+  neighborRadius: 1.5
+  avoidanceRadiusMultiplier: 1
+--- !u!4 &739763863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739763861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.4176965, y: -3.9014792, z: 3.9478095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816588974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,12 +3294,12 @@ GameObject:
   - component: {fileID: 816588977}
   - component: {fileID: 816588976}
   m_Layer: 8
-  m_Name: T
+  m_Name: t
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &816588975
 Transform:
   m_ObjectHideFlags: 0
@@ -3270,7 +3321,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816588974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3473,12 +3524,12 @@ GameObject:
   - component: {fileID: 855572570}
   - component: {fileID: 855572569}
   m_Layer: 8
-  m_Name: U
+  m_Name: u
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &855572568
 Transform:
   m_ObjectHideFlags: 0
@@ -3500,7 +3551,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855572567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3730,12 +3781,12 @@ GameObject:
   - component: {fileID: 1131460938}
   - component: {fileID: 1131460940}
   m_Layer: 8
-  m_Name: G
+  m_Name: g
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1131460938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3807,7 +3858,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131460937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4018,12 +4069,12 @@ GameObject:
   - component: {fileID: 1156988256}
   - component: {fileID: 1156988255}
   m_Layer: 8
-  m_Name: J
+  m_Name: j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1156988254
 Transform:
   m_ObjectHideFlags: 0
@@ -4045,7 +4096,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156988253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4192,12 +4243,12 @@ GameObject:
   - component: {fileID: 1177633019}
   - component: {fileID: 1177633018}
   m_Layer: 8
-  m_Name: N
+  m_Name: n
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1177633017
 Transform:
   m_ObjectHideFlags: 0
@@ -4219,7 +4270,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177633016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4518,8 +4569,6 @@ MonoBehaviour:
   - {fileID: 2114132499}
   - {fileID: 1131460937}
   - {fileID: 1131460937}
-  boid1: {fileID: 6514614676852112123, guid: 6d3a2f017d183f84dbeef0f2c14f1fc7, type: 3}
-  boid2: {fileID: 6514614676852112123, guid: 778ca39860569a44faa40f483ffcc4f9, type: 3}
 --- !u!114 &1219673301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4592,12 +4641,12 @@ GameObject:
   - component: {fileID: 1255275315}
   - component: {fileID: 1255275317}
   m_Layer: 8
-  m_Name: F
+  m_Name: f
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1255275315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4669,7 +4718,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255275314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4789,7 +4838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1460389394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4804,9 +4853,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 3983389226322596896, guid: 365c5f9a3c84275408be87a5ad77f987,
     type: 3}
-  behaviour: {fileID: 11400000, guid: 1330b9058788cb34b9fa2ee18fcb72c6, type: 2}
+  behaviour: {fileID: 11400000, guid: fbf581b8455c77d4abf53bcc28a20144, type: 2}
   startingCount: 100
-  driveFactor: 71
+  driveFactor: 50
   maxSpeed: 2
   neighborRadius: 1
   avoidanceRadiusMultiplier: 0.5
@@ -4836,12 +4885,12 @@ GameObject:
   - component: {fileID: 1549192212}
   - component: {fileID: 1549192211}
   m_Layer: 8
-  m_Name: L
+  m_Name: l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1549192210
 Transform:
   m_ObjectHideFlags: 0
@@ -4863,7 +4912,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549192209}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4967,12 +5016,12 @@ GameObject:
   - component: {fileID: 1572255378}
   - component: {fileID: 1572255377}
   m_Layer: 8
-  m_Name: K
+  m_Name: k
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1572255376
 Transform:
   m_ObjectHideFlags: 0
@@ -4994,7 +5043,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572255375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5176,12 +5225,12 @@ GameObject:
   - component: {fileID: 1683419061}
   - component: {fileID: 1683419063}
   m_Layer: 8
-  m_Name: E
+  m_Name: e
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1683419061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5253,7 +5302,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683419060}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5328,7 +5377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1728287755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5343,9 +5392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 3983389226322596896, guid: a2d0d164ae21fd44686d7c8add773039,
     type: 3}
-  behaviour: {fileID: 11400000, guid: 1330b9058788cb34b9fa2ee18fcb72c6, type: 2}
+  behaviour: {fileID: 11400000, guid: fbf581b8455c77d4abf53bcc28a20144, type: 2}
   startingCount: 100
-  driveFactor: 71
+  driveFactor: 50
   maxSpeed: 2
   neighborRadius: 1
   avoidanceRadiusMultiplier: 0.5
@@ -5375,12 +5424,12 @@ GameObject:
   - component: {fileID: 1764728717}
   - component: {fileID: 1764728716}
   m_Layer: 8
-  m_Name: W
+  m_Name: w
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1764728715
 Transform:
   m_ObjectHideFlags: 0
@@ -5402,7 +5451,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764728714}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5703,12 +5752,12 @@ GameObject:
   - component: {fileID: 1978861528}
   - component: {fileID: 1978861527}
   m_Layer: 8
-  m_Name: M
+  m_Name: m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1978861526
 Transform:
   m_ObjectHideFlags: 0
@@ -5730,7 +5779,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978861525}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5973,12 +6022,12 @@ GameObject:
   - component: {fileID: 2037348080}
   - component: {fileID: 2037348079}
   m_Layer: 8
-  m_Name: R
+  m_Name: r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2037348078
 Transform:
   m_ObjectHideFlags: 0
@@ -6000,7 +6049,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037348077}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -6169,12 +6218,12 @@ GameObject:
   - component: {fileID: 2114132502}
   - component: {fileID: 2114132501}
   m_Layer: 8
-  m_Name: Z
+  m_Name: z
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2114132500
 Transform:
   m_ObjectHideFlags: 0
@@ -6196,7 +6245,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114132499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

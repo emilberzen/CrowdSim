@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad36af58705b8544eacb4aa9990882f6, type: 3}
-  m_Name: Obsticle Layer Fiter
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 256
+  m_Script: {fileID: 0}
+  m_Name: Alignment Behaviour 3D
+  m_EditorClassIdentifier: Assembly-CSharp::AlignmentBehaviour3D
+  filter: {fileID: 11400000, guid: a21d1276cf50ab442954a01e36e9a762, type: 2}

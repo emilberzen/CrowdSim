@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad36af58705b8544eacb4aa9990882f6, type: 3}
-  m_Name: Obsticle Layer Fiter
+  m_Script: {fileID: 11500000, guid: 5507e83d02f5eff40a5ec97bb5ee9092, type: 3}
+  m_Name: Stay In Radius Behaviour 3D
   m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 256
+  filter: {fileID: 11400000, guid: a21d1276cf50ab442954a01e36e9a762, type: 2}
+  center: {x: 0, y: 0, z: 0}
+  radius: 15

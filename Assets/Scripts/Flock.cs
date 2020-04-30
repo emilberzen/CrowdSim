@@ -49,8 +49,8 @@ public class Flock : MonoBehaviour
 
             FlockAgent NewAgent = Instantiate(
                 agentPrefab,
-                Random.insideUnitCircle * startingCount * AgentDenstity,
-                Quaternion.Euler(Vector3.forward*Random.Range(0,360f)),
+                (Random.insideUnitCircle* startingCount * AgentDenstity*2),
+                Quaternion.Euler(Vector3.forward*Random.Range(0,360)),
                 transform
 
                 );

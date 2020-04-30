@@ -11,29 +11,38 @@ public class LettersController : MonoBehaviour
 
     [SerializeField]
     public GameObject[] Letters;
-    public GameObject boid1;
-    public GameObject boid2;
+
     
     void Start()
     {
-        Debug.Log(Letters.Length);
-
-        GameObject b =  GameObject.Find("a");
-        Debug.Log(b);
     }
 
     // Update is called once per frame
     void Update()
     {
-        string buttonPressed = Input.inputString;
 
 
-        if (Input.anyKey)
+        if (Input.anyKeyDown)
         {
-            Debug.Log(buttonPressed);
+            string buttonPressed = Input.inputString;
 
+            if (Input.GetKeyDown(buttonPressed) && buttonPressed != " ")
+            {
+                hideLetters();
+                GameObject.Find(Input.inputString).GetComponent<PolygonCollider2D>().enabled = true;
+                Debug.Log(GameObject.Find(Input.inputString));
+                
+
+
+            }
+
+            if (Input.GetKeyDown("space"))
+            {
+                hideLetters();
+            }
         }
 
+        /*
 
             switch (buttonPressed)
         {
@@ -235,6 +244,7 @@ public class LettersController : MonoBehaviour
 
 
         }
+        */
 
     }
 
@@ -244,7 +254,10 @@ public class LettersController : MonoBehaviour
 
         for (int i = 0; i < Letters.Length; i++)
         {
-            Letters[i].SetActive(false);
+           // Letters[i].SetActive(false);
+            Letters[i].GetComponent<PolygonCollider2D>().enabled = false;
+
+
         }
 
     }

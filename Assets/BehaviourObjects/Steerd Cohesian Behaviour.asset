@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad36af58705b8544eacb4aa9990882f6, type: 3}
-  m_Name: Obsticle Layer Fiter
+  m_Script: {fileID: 11500000, guid: 0ed4319a33ef94656af888e0c3af355f, type: 3}
+  m_Name: Steerd Cohesian Behaviour
   m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 256
+  filter: {fileID: 11400000, guid: a3895dfe9aa84bd42aa70f8574b17c07, type: 2}
+  agentSmoothTime: 1

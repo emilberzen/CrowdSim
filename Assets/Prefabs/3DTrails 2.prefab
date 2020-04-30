@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1194757222160623392}
   - component: {fileID: 5865023820921957366}
-  - component: {fileID: 8136373172465619728}
-  - component: {fileID: 3983389226322596896}
-  - component: {fileID: 8967910512877532701}
+  - component: {fileID: -5989472685164930987}
+  - component: {fileID: -3690806966639555669}
   m_Layer: 0
-  m_Name: Trail
+  m_Name: 3DTrails 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,8 +81,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.011112213
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -105,7 +104,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0.4198113, g: 0.8008919, b: 1, a: 1}
+      key1: {r: 0.48671433, g: 0.8679245, b: 0.25792095, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -132,41 +131,28 @@ TrailRenderer:
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 6
+    numCapVertices: 0
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
-    generateLightingData: 0
+    generateLightingData: 1
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!61 &8136373172465619728
-BoxCollider2D:
+--- !u!135 &-5989472685164930987
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7851709213862783053}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &3983389226322596896
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3690806966639555669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,25 +161,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7851709213862783053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d077bb233a3247f4933081d2ba1f1bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d3b02b13432eb642a699edc24c3bd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8967910512877532701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7851709213862783053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227c87ae71673f44588eeed6e8dff12e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 0}
-  behaviour: {fileID: 0}
-  startingCount: 250
-  driveFactor: 10
-  maxSpeed: 5
-  neighborRadius: 1.5
-  avoidanceRadiusMultiplier: 0.5

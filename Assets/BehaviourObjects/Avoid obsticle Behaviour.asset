@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad36af58705b8544eacb4aa9990882f6, type: 3}
-  m_Name: Obsticle Layer Fiter
+  m_Script: {fileID: 11500000, guid: 52b2ef19bca964a7097800cec0b3765b, type: 3}
+  m_Name: Avoid obsticle Behaviour
   m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 256
+  filter: {fileID: 11400000, guid: f67c8892e852acb41b701867a59efe8f, type: 2}

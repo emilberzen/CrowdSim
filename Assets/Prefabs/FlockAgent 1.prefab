@@ -90,8 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5390944829600938954}
-  - component: {fileID: 728864124850914965}
-  - component: {fileID: 1910838323163994149}
+  - component: {fileID: 1013016862095801030}
+  - component: {fileID: -2720605140587148431}
   m_Layer: 0
   m_Name: FlockAgent 1
   m_TagString: Untagged
@@ -114,23 +114,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &728864124850914965
-CircleCollider2D:
+--- !u!135 &1013016862095801030
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6514614676852112123}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.48
---- !u!114 &1910838323163994149
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2720605140587148431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +136,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6514614676852112123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d077bb233a3247f4933081d2ba1f1bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d3b02b13432eb642a699edc24c3bd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
