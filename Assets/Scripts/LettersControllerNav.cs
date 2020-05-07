@@ -1,52 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 
-using DG.Tweening;
-public class LettersController : MonoBehaviour
+public class LettersControllerNav : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     [SerializeField]
     public GameObject[] Letters;
-
-
+    private string buttonPressed;
     // Update is called once per frame
     void Update()
     {
-
-
         if (Input.anyKeyDown)
         {
-            string buttonPressed = Input.inputString;
-
-            if (Input.GetKeyDown(buttonPressed) && buttonPressed != " ")
-            {
-                hideLetters();
-                GameObject.Find(Input.inputString).GetComponent<PolygonCollider2D>().enabled = true;
-                Debug.Log(GameObject.Find(Input.inputString));
-                
-
-
-            }
-
-            if (Input.GetKeyDown("space"))
-            {
-                hideLetters();
-            }
+            buttonPressed = Input.inputString;
         }
 
-        /*
-
-            switch (buttonPressed)
+        switch (buttonPressed)
         {
 
 
             case "a":
                 Debug.Log("a pressed");
-                
+
                 hideLetters();
                 Letters[0].SetActive(true);
 
@@ -210,7 +186,7 @@ public class LettersController : MonoBehaviour
 
                 Letters[22].SetActive(true);
                 break;
-                
+
             case "x":
                 Debug.Log("x pressed");
                 hideLetters();
@@ -240,7 +216,6 @@ public class LettersController : MonoBehaviour
 
 
         }
-        */
 
     }
 
@@ -250,11 +225,11 @@ public class LettersController : MonoBehaviour
 
         for (int i = 0; i < Letters.Length; i++)
         {
-           // Letters[i].SetActive(false);
-            Letters[i].GetComponent<PolygonCollider2D>().enabled = false;
+            Letters[i].SetActive(false);
 
 
         }
 
     }
+
 }

@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class AgentControl : MonoBehaviour
 {
 
-    public GameObject home;
-    private GameObject HomePos;
+    private GameObject home;
+
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()

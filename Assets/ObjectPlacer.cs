@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ObjectPlacer : MonoBehaviour
@@ -12,14 +13,14 @@ public class ObjectPlacer : MonoBehaviour
     private float randomX;
     private float randomZ;
     private SpriteRenderer r;
-    private Vector2 lastPos;
-    private float dist;
+    public float minDistance = 0.01f; // Each waypoint must be radius 10 apart
+    private List<Vector3> waypointPositions = new List<Vector3>();
+
+
     void Start()
     {
 
         r = GetComponent<SpriteRenderer>();
-        lastPos = new Vector2(0, 0);
-        objPos.Add(lastPos);
 
     }
  
@@ -35,44 +36,64 @@ public class ObjectPlacer : MonoBehaviour
             randomX = Random.Range(r.bounds.min.x, r.bounds.max.x);
             randomZ = Random.Range(r.bounds.min.y, r.bounds.max.y);
 
-
-            /*
-            if (Physics.Raycast(new Vector3(randomX, r.bounds.max.y + 5f, randomZ), -Vector3.up, out hit))
-            {
-                Instantiate(objectToPlace, hit.point, Quaternion.identity);
-                currentObjects += 1;
-                Debug.Log("hello");    
-
-            }
-                */
-
             // Cast a ray straight down.
-
             RaycastHit2D hit2D = Physics2D.Raycast(new Vector3(randomX, randomZ, r.bounds.max.y + 5f), -Vector3.up);
         
 
             // If it hits something...
-            
             if (hit2D.collider != null)
             {
-                
-                for (int i = 0; i < objPos.Count; i++)
-                {
-                    
-                        if (Vector2.Distance(hit2D.point, lastPos) <3)
-                        {
-                        Instantiate(objectToPlace, hit2D.point, Quaternion.identity);
 
+                         Vector2 hitPos = hit2D.point;
+                        bool close = false;
+                        foreach (Vector3 wp in waypointPositions) // foreach loop cycles through each type (Vector3) in the list and names it (wp)
+                        {
+                            if (Vector3.Distance(wp, hitPos) < minDistance) close = true;  // Compares the distance between the random point and each existing waypoint
+                        }
+                        if (!close) // If the new point is valid add it to the list, instantiate it, and break out of the j-indexed for loop
+                        {
+
+                            waypointPositions.Add(hitPos);
+                            var newObject = (GameObject)Instantiate(objectToPlace, hit2D.point, Quaternion.identity);
+                            newObject.name = currentObjects.ToString();
+                            newObject.transform.parent = gameObject.transform;
+                            currentObjects += 1;
+                            Debug.Log("hello");
+
+                        }
+
+
+
+                        /*
+
+
+                foreach (Vector2 obj in objPos)
+                {
+
+                    if (Vector3.Distance(obj, hit2D.point)> 2f)
+                    {
+                        dist.Add(Vector3.Distance(obj, hit2D.point));
+
+                        if (dist.Min()>3)
+                        {
+
+
+                        }
                         lastPos = hit2D.point;
                         objPos.Add(lastPos);
-                        currentObjects += 1;
-
+                        currentObjects += 1; break;
                     }
-                }
 
+                }
+                */
 
             }
 
         }
+    }
+
+    void FillList()
+    {
+       
     }
 }
