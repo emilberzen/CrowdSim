@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class AgentControl : MonoBehaviour
 {
 
-    public Transform home;
+    public GameObject home;
+    private GameObject HomePos;
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class AgentControl : MonoBehaviour
     void Update()
     {
         agent = this.GetComponent<NavMeshAgent>();
-        agent.SetDestination(home.position);
+        home = GameObject.Find(this.name.Remove(0, 1));
+        agent.SetDestination(home.transform.position);
     }
 }
