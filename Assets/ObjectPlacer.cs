@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
 public class ObjectPlacer : MonoBehaviour
 {
     public int numberOfObjects;
@@ -33,8 +34,8 @@ public class ObjectPlacer : MonoBehaviour
         if (currentObjects <= numberOfObjects)
         {
             
-            randomX = Random.Range(r.bounds.min.x, r.bounds.max.x);
-            randomZ = Random.Range(r.bounds.min.y, r.bounds.max.y);
+            randomX =(float)System.Math.Round(Random.Range(r.bounds.min.x, r.bounds.max.x),1);
+            randomZ = (float)System.Math.Round(Random.Range(r.bounds.min.y, r.bounds.max.y),1);
 
             // Cast a ray straight down.
             RaycastHit2D hit2D = Physics2D.Raycast(new Vector3(randomX, randomZ, r.bounds.max.y + 5f), -Vector3.up);

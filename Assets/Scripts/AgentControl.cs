@@ -7,7 +7,6 @@ public class AgentControl : MonoBehaviour
 {
 
     private GameObject home;
-
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
