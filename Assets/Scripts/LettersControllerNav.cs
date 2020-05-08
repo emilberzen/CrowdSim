@@ -208,13 +208,6 @@ public class LettersControllerNav : MonoBehaviour
                 Letters[25].SetActive(true);
                 break;
 
-            case " ":
-                Debug.Log("Space pressed");
-                hideLetters();
-
-                break;
-
-
         }
 
     }
