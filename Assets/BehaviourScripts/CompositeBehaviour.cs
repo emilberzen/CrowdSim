@@ -84,4 +84,11 @@ public class CompositeBehaviour : FilterFlockBehaviour
 
     }
 
+    public void AdjustAvoidObsticle(float newObsticle)
+    {
+
+        weights[4] = newObsticle;
+
+    }
+
 }

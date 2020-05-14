@@ -21,8 +21,8 @@ public class LettersController : MonoBehaviour
         if (Input.anyKeyDown)
         {
             string buttonPressed = Input.inputString;
-
-            if (Input.GetKeyDown(buttonPressed) && buttonPressed != " ")
+            Debug.Log(buttonPressed);    
+            if (buttonPressed != " " && buttonPressed != "")
             {
                 hideLetters();
                 GameObject.Find(Input.inputString).GetComponent<PolygonCollider2D>().enabled = true;
@@ -32,9 +32,10 @@ public class LettersController : MonoBehaviour
 
             }
 
-            if (Input.GetKeyDown("space"))
+            if (buttonPressed == " ")
             {
                 hideLetters();
+                Debug.Log("space Pressed");
             }
         }
 

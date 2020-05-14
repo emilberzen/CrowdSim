@@ -11,7 +11,6 @@ public class AgentControl : MonoBehaviour
     private GameObject home;
     NavMeshAgent agent;
 
-    public GameObject [] homies = new GameObject[100];
     // Start is called before the first frame update
     void Start()
     {
