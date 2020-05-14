@@ -59,6 +59,7 @@ public class Flock : MonoBehaviour
             //Now it knows what flock it belong to
             NewAgent.initialize(this);
             agents.Add(NewAgent);
+            
         }
 
     }
@@ -87,6 +88,71 @@ public class Flock : MonoBehaviour
         }
     }
 
+    public void adjustSpeed(float newSpeed)
+    {
+
+        maxSpeed = newSpeed;
+
+    }
+
+
+    public void adjustDriveFactor(float newDrive)
+    {
+
+
+        driveFactor = newDrive;
+    }
+
+
+    public void adjustNeibourRadius(float newNeighbourRad)
+    {
+
+        neighborRadius = newNeighbourRad;
+    }
+
+    public void adjustNeibourMultiplier(float newNeighbourMulti)
+    {
+
+        avoidanceRadiusMultiplier = newNeighbourMulti;
+    }
+
+    public void adjusStartAmount(float newAmount)
+    {
+
+        startingCount = Mathf.RoundToInt(newAmount)/3;
+    }
+    public void clear()
+    {
+
+        agents.Clear();
+    }
+    public void restart()
+    {
+        
+        for (int i = 0; i < startingCount; i++)
+        {
+
+
+
+            FlockAgent NewAgent = Instantiate(
+                agentPrefab,
+                (Random.insideUnitCircle * startingCount * AgentDenstity * 2),
+                Quaternion.Euler(Vector3.forward * Random.Range(0, 360)),
+                transform
+
+                );
+            NewAgent.name = "Agent" + i;
+
+            //Now it knows what flock it belong to
+            NewAgent.initialize(this);
+            agents.Add(NewAgent);
+
+        }
+
+
+
+
+    }
 
     List<Transform> GetNearbyObjects(FlockAgent agent)
     {

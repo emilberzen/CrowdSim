@@ -23,4 +23,12 @@ public class StayInRadiusBehaviour : FilterFlockBehaviour
     }
 
 
+    public void changeRadius(float NewRadius)
+    {
+
+        radius = NewRadius;
+
+    }
+
+
 }

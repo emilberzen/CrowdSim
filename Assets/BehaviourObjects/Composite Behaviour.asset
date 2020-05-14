@@ -20,8 +20,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 252756b940cbe344eaadf6d307dfb411, type: 2}
   - {fileID: 11400000, guid: 13c1d632831ffdb4989ac31d6d906599, type: 2}
   weights:
-  - 5
-  - 0.1
-  - 0.1
-  - 0.3
-  - 4
+  - 2.0142858
+  - 0.026785715
+  - 0
+  - 0.18571429
+  - 10
+  cohesian: 9.1

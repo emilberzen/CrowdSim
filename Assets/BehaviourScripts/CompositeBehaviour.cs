@@ -11,10 +11,13 @@ public class CompositeBehaviour : FilterFlockBehaviour
     public FlockBehaviour[] behaviours;
     public float[] weights;
 
+    public float cohesian; 
+
 
 
     public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
     {
+
         //Handle data missmatch 
         if (weights.Length != behaviours.Length)
         {
@@ -51,6 +54,34 @@ public class CompositeBehaviour : FilterFlockBehaviour
             }
         }
 
-        return move; 
+        return move;
+
     }
+
+
+
+    public void AdjustSteerCohesian(float newCohesian)
+    {
+        weights[0] = newCohesian;
+
+    }
+
+    public void AdjustAlignment(float newAlignment)
+    {
+        weights[1] = newAlignment;
+
+    }
+
+    public void AdjustAvoidance(float newAvoidance)
+    {
+        weights[2] = newAvoidance;
+
+    }
+
+    public void AdjustStayInRadius (float newCohesian)
+    {
+        weights[3] = newCohesian;
+
+    }
+
 }

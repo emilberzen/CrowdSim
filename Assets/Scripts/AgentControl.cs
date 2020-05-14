@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class AgentControl : MonoBehaviour
 {
 
     private GameObject home;
     NavMeshAgent agent;
+
+    public GameObject [] homies = new GameObject[100];
     // Start is called before the first frame update
     void Start()
     {

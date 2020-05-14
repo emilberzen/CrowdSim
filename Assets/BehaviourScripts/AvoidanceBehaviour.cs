@@ -40,7 +40,7 @@ public class AvoidanceBehaviour : FilterFlockBehaviour
             }
         }
 
-        if(nAvoid > 0) 
+        if(nAvoid > 0)  
         {
             AvoidanceMove /= nAvoid;
         }
